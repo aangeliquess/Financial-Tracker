@@ -48,12 +48,12 @@ const FinancialLiteracyApp = () => {
   ];
 
   const workshopsList = [
-    "Financial Basics Workshop",
-    "Budgeting 101",
+    "Money Foundations & Budget Setup",
+    "Goal Setting & Saving Smart",
     "Banking & Credit",
-    "Job Readiness & Income",
-    "Housing & Independent Living",
-    "College Financial Planning"
+    "Budgeting for School, Fun & Life",
+    "Cost of College & Scholarships",
+    "Smart Spending & Mental Health"
   ];
 
   const processReceiptWithAI = (file) => {
