@@ -1,5 +1,4 @@
-import FinancialLiteracyApp from '../financial_literacy_app (1)';
-
+import FinancialLiteracyApp from './FinancialLiteracyApp';
 export default function App() {
   return <FinancialLiteracyApp />;
 }
