@@ -834,7 +834,7 @@ function EmptyState() {
                             background: dark ? "#0b1220" : "#ffffff",
                             color: dark ? "#e2e8f0" : "#0f172a",
                           }}
-                          formatter={(v: number) => [currency(v as number), "Net"]}
+                          formatter={(v: any) => [currency(v as number), "Net"]}
                         />
                         <Area type="monotone" dataKey="value" stroke="currentColor" fill="url(#area)" />
                       </AreaChart>
@@ -860,7 +860,7 @@ function EmptyState() {
                               <Cell key={index} fill={COLORS[index % COLORS.length]} />
                             ))}
                           </Pie>
-                          <Tooltip formatter={(v: number) => currency(v)} />
+                          <Tooltip formatter={(v: any) => currency(v as number)} />
                         </PieChart>
                       </ResponsiveContainer>
                     </div>
