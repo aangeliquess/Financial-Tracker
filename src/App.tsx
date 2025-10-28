@@ -310,11 +310,11 @@ export default function App() {
 
   if (view === 'welcome') {
     return (
-      <div className={`min-h-screen flex items-center justify-center ${dark ? "dark bg-slate-950" : "bg-gradient-to-br from-violet-50 to-indigo-100"}`}>
-        <div className="bg-white dark:bg-slate-900 rounded-2xl shadow-2xl p-8 max-w-md w-full mx-4">
+      <div className={`min-h-screen flex items-center justify-center ${dark ? "dark bg-slate-950" : "bg-gradient-to-br from-violet-50 via-indigo-50 to-purple-50"}`}>
+        <div className="bg-white dark:bg-slate-900 rounded-2xl shadow-2xl p-8 max-w-md w-full mx-4 border border-violet-100 dark:border-slate-800">
           <div className="text-center mb-6">
-            <div className="bg-violet-100 dark:bg-violet-900/30 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Wallet2 className="text-violet-600 dark:text-violet-400" size={32} />
+            <div className="bg-gradient-to-br from-violet-100 to-indigo-100 dark:from-violet-900/30 dark:to-indigo-900/30 w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+              <Wallet2 className="text-violet-600 dark:text-violet-400" size={36} />
             </div>
             <h1 className="text-3xl font-bold text-slate-900 dark:text-white mb-2">Welcome to Your Financial Journey</h1>
             <p className="text-slate-600 dark:text-slate-400">School on Wheels Financial Wellness Tracker</p>
@@ -327,7 +327,7 @@ export default function App() {
                 type="text"
                 value={studentName}
                 onChange={(e) => setStudentName(e.target.value)}
-                className="w-full px-4 py-2 border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-950 text-slate-800 dark:text-slate-100 rounded-lg focus:ring-2 focus:ring-violet-400"
+                className="w-full px-4 py-3 border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-950 text-slate-800 dark:text-slate-100 rounded-lg focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-transparent transition"
                 placeholder="Enter your name"
               />
             </div>
@@ -336,9 +336,10 @@ export default function App() {
               <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">Monthly UBI Stipend ($)</label>
               <input
                 type="number"
+                step="0.01"
                 value={monthlyStipend}
                 onChange={(e) => setMonthlyStipend(e.target.value)}
-                className="w-full px-4 py-2 border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-950 text-slate-800 dark:text-slate-100 rounded-lg focus:ring-2 focus:ring-violet-400"
+                className="w-full px-4 py-3 border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-950 text-slate-800 dark:text-slate-100 rounded-lg focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-transparent transition"
                 placeholder="Enter amount"
               />
             </div>
@@ -346,7 +347,7 @@ export default function App() {
             <button
               type="submit"
               disabled={!studentName.trim() || !monthlyStipend}
-              className="w-full bg-violet-700 hover:bg-violet-800 disabled:bg-slate-300 dark:disabled:bg-slate-700 text-white py-3 rounded-lg font-semibold transition"
+              className="w-full bg-gradient-to-r from-violet-700 to-indigo-700 hover:from-violet-800 hover:to-indigo-800 disabled:from-slate-300 disabled:to-slate-300 dark:disabled:from-slate-700 dark:disabled:to-slate-700 text-white py-3 rounded-lg font-semibold transition shadow-lg disabled:shadow-none"
             >
               Get Started
             </button>
