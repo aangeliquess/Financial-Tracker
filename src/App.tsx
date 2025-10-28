@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useState } from "react"
-import { PlusCircle, Trash2, Sun, Moon, Wallet2, Target, BookOpen, Award, Camera, Download, Upload, AlertCircle, ChevronRight, TrendingUp, DollarSign } from "lucide-react"
+import { PlusCircle, Trash2, Sun, Moon, Wallet2, Target, BookOpen, Award, Camera, Download, Upload, AlertCircle, ChevronRight } from "lucide-react"
 import { ResponsiveContainer, AreaChart, Area, XAxis, YAxis, Tooltip, PieChart, Pie, Cell } from "recharts"
 import { motion, AnimatePresence } from "framer-motion"
 
